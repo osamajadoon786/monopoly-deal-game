@@ -1,0 +1,100 @@
+.player-hand {
+  width: 100%;
+}
+
+.hand-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.hand-card {
+  width: 130px;
+  height: 180px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 3px solid transparent;
+  overflow: hidden;
+}
+
+.hand-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hand-card.selected {
+  border-color: #4CAF50;
+  transform: translateY(-15px) scale(1.1);
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.card-content strong {
+  font-size: 0.9em;
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+
+.money-value {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.hand-card.color-brown .card-inner {
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+}
+
+.hand-card.color-lightblue .card-inner {
+  background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+}
+
+.hand-card.color-pink .card-inner {
+  background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+}
+
+.hand-card.color-orange .card-inner {
+  background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+}
+
+.hand-card.color-red .card-inner {
+  background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);
+}
+
+.hand-card.color-yellow .card-inner {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #333;
+}
+
+.hand-card.color-darkblue .card-inner {
+  background: linear-gradient(135deg, #00008B 0%, #000080 100%);
+}
+
+.hand-card.color-money .card-inner {
+  background: linear-gradient(135deg, #00B050 0%, #006600 100%);
+}
+
+.hand-card.color-action .card-inner {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF0000 100%);
+}
